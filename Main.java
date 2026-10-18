@@ -1,13 +1,13 @@
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
-        Scanner jennie = new Scanner(System.in);
-        System.out.println("The light is on. (True/False)");
-        boolean ans= jennie.nextBoolean();
-        if(ans==true){
-            System.out.println("The light is on.");
+        Scanner store= new Scanner(System.in);
+        System.out.println("What is your mark?");
+        int mark= store.nextInt();
+        if(mark>=50){
+            System.out.println("pass");
         } else {
-            System.out.println("The light is off.");
+            System.out.println("fail");
         }
     }
 }
